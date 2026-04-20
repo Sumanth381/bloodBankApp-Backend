@@ -38,9 +38,11 @@ const User = sequelize.define(
       allowNull: false,
     },
   },
-  {
+   {
     tableName: "users",
     timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
   }
 );
 
